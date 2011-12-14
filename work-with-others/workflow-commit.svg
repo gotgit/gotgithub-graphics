@@ -14,8 +14,8 @@
    inkscape:version="0.48.2 r9819"
    version="1.1"
    id="svg11525"
-   height="233.09557"
-   width="286.6084"
+   height="146.24921"
+   width="276.86752"
    inkscape:export-filename="/Volumes/MacDATA/work/gotgithub/images/work-with-others/workflow-commit.png"
    inkscape:export-xdpi="202.34"
    inkscape:export-ydpi="202.34">
@@ -27,25 +27,25 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="130.274"
-     inkscape:cy="106.70747"
+     inkscape:cx="120.68627"
+     inkscape:cy="102.05072"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
      inkscape:window-width="1280"
      inkscape:window-height="752"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="0,1"
-       position="84.107142,94.285714"
+       position="74.519415,32.486102"
        id="guide4793" />
   </sodipodi:namedview>
   <defs
@@ -1079,8 +1079,9 @@
        inkscape:label="Drop shadow"
        width="1.5"
        height="1.5"
-       x="-.25"
-       y="-.25">
+       x="-0.25"
+       y="-0.25"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          id="feGaussianBlur9169"
          in="SourceAlpha"
@@ -1176,12 +1177,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-331.386,-482.57083)"
+     transform="translate(-340.97373,-507.61758)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -1548,7 +1549,7 @@
          x="552.74316"
          y="615.09497">jiangxin</tspan></text>
     <rect
-       style="opacity:0.35;fill:none;stroke:#000000;stroke-width:0.48204996999999999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.96409993999999999, 0.48204996999999999;stroke-dashoffset:0"
+       style="opacity:0.35;fill:none;stroke:#000000;stroke-width:0.48204997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:0.96409994, 0.48204997;stroke-dashoffset:0"
        id="rect4425"
        width="53.821972"
        height="27.245083"
@@ -2053,7 +2054,7 @@
          x="402.74313"
          id="tspan9220"
          sodipodi:role="line"
-         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold;fill:#c80000;fill-opacity:1">commit</tspan></text>
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#c80000;fill-opacity:1;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold">commit</tspan></text>
     <g
        style="filter:url(#filter9167)"
        transform="translate(5.562757,33.999727)"
@@ -2074,7 +2075,7 @@
        y="605.45209"
        id="text9238"
        sodipodi:linespacing="125%"><tspan
-         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold;fill:#c80000;fill-opacity:1"
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#c80000;fill-opacity:1;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold"
          sodipodi:role="line"
          id="tspan9240"
          x="496.74313"
@@ -2103,6 +2104,6 @@
          x="590.74316"
          id="tspan9254"
          sodipodi:role="line"
-         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold;fill:#c80000;fill-opacity:1">commit</tspan></text>
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#c80000;fill-opacity:1;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption Bold">commit</tspan></text>
   </g>
 </svg>
