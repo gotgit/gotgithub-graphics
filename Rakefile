@@ -17,28 +17,28 @@ CMD_IMGMAGICK='convert'
 desc "export images, default: rake convert[../images,600]"
 task :convert, :target, :width do |t, args|
   args.with_defaults(:target => TARGET, :width => RESIZE)
-  FileList["**/*.svg", "**/*.xcf", "**/*.jpg", "**/*.png", "**/*.gif"].each do |t|
+  FileList["**/*.svg", "**/*.xcf", "**/*.jpg", "**/*.png", "**/*.gif"].each do |source|
     [".svg", ".png", ".gif", ".xcf"].each do |prefer|
-      if File.exists?(t.sub(/\.[^.]+$/, prefer))
-        t = t.sub(/\.[^.]+$/, prefer)
+      if File.exists?(source.sub(/\.[^.]+$/, prefer))
+        source = source.sub(/\.[^.]+$/, prefer)
         break
       end
     end
-    if t =~ /\.svg/
-      f = args[:target] + '/' + t.sub(/\.[^.]+$/, '.png')
-      command = "#{CMD_INKSCAPE} -w #{args[:width]} -f #{t} -e #{f}"
-    elsif t =~ /\.xcf/
-      f = args[:target] + '/' + t.sub(/\.[^.]+$/, '.png')
-      command = "#{CMD_IMGMAGICK} -auto-level -flatten -resize '#{args[:width]}>' #{t} #{f}"
-    elsif t =~ /\.(jpg|png|gif)/
-      f = args[:target] + '/' + t
-      command = "#{CMD_IMGMAGICK} -auto-level -resize '#{args[:width]}>' #{t} #{f}"
+    if source =~ /\.svg/
+      output = args[:target] + '/' + source.sub(/\.[^.]+$/, '.png')
+      command = "#{CMD_INKSCAPE} -w #{args[:width]} -f #{source} -e #{output}"
+    elsif source =~ /\.xcf/
+      output = args[:target] + '/' + source.sub(/\.[^.]+$/, '.png')
+      command = "#{CMD_IMGMAGICK} -auto-level -flatten -resize '#{args[:width]}>' #{source} #{output}"
+    elsif source =~ /\.(jpg|png|gif)/
+      output = args[:target] + '/' + source
+      command = "#{CMD_IMGMAGICK} -auto-level -resize '#{args[:width]}>' #{source} #{output}"
     end
 
-    unless uptodate?(f, t)
-      Dir.mkdir(File.dirname(f)) unless File.exists?(File.dirname(f))
+    unless uptodate?(output, source)
+      Dir.mkdir(File.dirname(output)) unless File.exists?(File.dirname(output))
       sh command
-      File.utime(0, Time.now, f)
+      File.utime(0, Time.now, output)
     end
   end
 end
