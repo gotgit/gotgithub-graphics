@@ -35,7 +35,7 @@ task :convert, :target, :width do |t, args|
       command = "#{CMD_IMGMAGICK} -auto-level -resize '#{args[:width]}>' #{source} #{output}"
     end
 
-    unless uptodate?(output, source)
+    unless uptodate?(output, [source])
       Dir.mkdir(File.dirname(output)) unless File.exists?(File.dirname(output))
       sh command
       File.utime(0, Time.now, output)
